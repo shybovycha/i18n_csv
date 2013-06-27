@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["shybovycha@gmail.com"]
   spec.description   = %q{One extends standard I18n so that you could store your translations in a Comma-Separated Value files (CSV) in a key-value manner, where the key is a word or a phrase or even a poem if you wish. No limits here (except be aware to escape symbols so the CSV format is kept). And the value is the same text as the key but translated to a language, specified by a file name you are using (for example, you could write one line to a sp.csv file: `"hello!","hola!"` and use `t 'hello!'` with a spanish locale to get the "hola!" text).}
   spec.summary       = %q{Extends I18n to use Magento-style CSV translation storage.}
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/shybovycha/i18n_csv"
   spec.license       = "MIT"
 
   spec.rubyforge_project = "i18n_csv"
