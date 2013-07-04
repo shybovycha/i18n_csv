@@ -47,6 +47,21 @@ Here are some examples:
     irb(main):004:0> I18n.t 'hello, world!'
     => "хеллоу ворлд =3"
 
+## Frontend translations
+
+Version `0.1.2` includes javascript translation support.
+
+To use it, just add this line to your `app/assets/javascripts/application.js` file:
+
+    //= require i18n_csv/frontend_translation
+
+And you are ready to use the `window.t(key, [locale]);` function on your frontend!
+
+For example of above locale files, imagine you have this line in one of your javascript files:
+
+    alert(t('hello'));
+
+You shall see then `привіт` in your alert window!
 
 ## Contributing
 

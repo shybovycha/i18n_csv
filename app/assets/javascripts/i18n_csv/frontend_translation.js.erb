@@ -1,0 +1,19 @@
+<% locales = I18n.backend.get_translations %>
+
+window.t = function(key, locale) {
+    var translations = {};
+
+    <% locales.each do |locale, translations| %>
+        translations[<%= locale.to_s.inspect %>] = {};
+
+        <% translations.each do |key, value| %>
+            translations[<%= locale.to_s.inspect %>][<%= key.inspect %>] = <%= value.inspect %>;
+        <% end %>
+    <% end %>
+
+    locale = locale || <%= I18n.locale.to_s.inspect || 'en' %>;
+
+    var result = (translations[locale] && translations[locale][key]) || key;
+
+    return result;
+};
