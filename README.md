@@ -1,6 +1,6 @@
 # I18nCsv
 
-One extends standard I18n so that you could store your translations in a Comma-Separated Value files (*CSV*) in a **key-value** manner, where the **key** is a word or a phrase or even a poem if you wish. No limits here (except be aware to escape symbols so the CSV format is kept). And the **value** is the same text as the key but translated to a language, specified by a file name you are using. For example, you could write one line to a `sp.csv` file: `"hello!","hola!"` and use `t 'hello!'` with a *spanish locale* to get the `"hola!"` text.
+One extends standard I18n so that you could store your translations in a Comma-Separated Value files ( _CSV_ ) in a **key-value** manner, where the **key** is a word or a phrase or even a poem if you wish. No limits here (except be aware to escape symbols so the CSV format is kept). And the **value** is the same text as the key but translated to a language, specified by a file name you are using. For example, you could write one line to a `sp.csv` file: `"hello!","hola!"` and use `t 'hello!'` with a *spanish locale* to get the `"hola!"` text.
 
 ## A brief of history
 
@@ -8,7 +8,7 @@ See, I used to be a Magento developer for some time. And I really liked their lo
 
 If Magento did not find the translated key' value - it just put the key itself. And if you try to keep all your keys in English, you did not face huge trouble when you did not set the translation for some text. But with the default Rails configuration, you get the HTML saying *I could not find the translation for moo.foo.bar string!*. And that's horrible, I think.
 
-So from my point of view, this approach (*CSV one*) is more flexible and user-friendly. So even customer could customize your locales.
+So from my point of view, this approach ( _CSV one_ ) is more flexible and user-friendly. So even customer could customize your locales.
 
 ## Installation
 
