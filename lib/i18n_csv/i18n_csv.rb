@@ -26,7 +26,7 @@ module I18n
 
     class MissingTranslation
         module Base
-            def candidate
+            def candidate_lookup
                 translations = I18n.backend.send :translations
                 locale = keys.first
                 path = ((keys - [ locale ]).map { |k| k.to_s }).join('.')
