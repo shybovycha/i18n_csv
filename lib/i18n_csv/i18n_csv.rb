@@ -44,5 +44,3 @@ module I18n
         end
     end
 end
-
-I18n.load_path += Dir[Rails.root.join('config', 'locales', '**', '*.csv')]
