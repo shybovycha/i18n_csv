@@ -28,10 +28,10 @@ module I18n
         module Base
             def candidate_lookup
                 translations = I18n.backend.send :translations
-                locale = keys.first
-                path = ((keys - [ locale ]).map { |k| k.to_s }).join('.')
+                locale = keys.shift
+                path = (keys.map { |k| k.to_s }).join('.')
 
-                translations[locale][path] || keys.last.to_s
+                translations[locale][path] || path
             end
 
             def message
